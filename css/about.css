@@ -1,0 +1,154 @@
+.about{
+  background-color: var(--color-primary);
+}
+
+.about .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .container .opening-hours{
+  width: 30%;
+  background-image: url('../images/brush-big.jpg');
+  background-size: cover;
+  padding: 20px;
+  position: relative;
+  top: -50px;
+}
+
+.about .opening-hours .overlay{
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+}
+
+.about .opening-hours .overlay img{
+  width: 60px;
+}
+
+.about .opening-hours .overlay h3{
+  color: var(--color-primary);
+  font-size: 30px;
+  border-bottom: 1px solid var(--color-primary);
+  width: fit-content;
+  margin: 0 auto 30px auto;
+  text-transform: uppercase;
+}
+
+.about .opening-hours .overlay{
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.about .opening-hours .overlay .barber-information{
+  margin-bottom: 30px;
+}
+.about .opening-hours .overlay .barber-information::after{
+  content: "•";
+  font-size: 25px;
+  display: block;
+}
+
+.about .opening-hours .overlay .barber-information:nth-child(5)::after{
+  content: "|";
+}
+
+.about .opening-hours .overlay .barber-information.no-icon::after{
+  content: "";
+}
+
+.about .opening-hours .overlay .barber-information img{
+  width: 20px;
+  margin-bottom: 10px;
+}
+
+.about .opening-hours .overlay .barber-information h4{
+  color: var(--color-primary);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.about .opening-hours .overlay span{
+  font-size: 14px;
+}
+
+.about .about-text{
+  width: 69%;
+  color: var(--color-primary-light);
+  margin-left: 7%;
+  margin-top: 100px;
+}
+
+.about .about-text h2{
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.about .about-text h2::after{
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: #a38f78;
+  display: block;
+  margin: 30px 0;
+}
+
+.about .about-text .text{
+  display: flex;
+  align-items: center;
+}
+
+.about .about-text .text p{
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+@media(max-width: 1000px){
+  .about .container{
+    flex-direction: column;
+  }
+
+  .about .container .opening-hours{
+    width: 100%;
+  }
+
+  .about .about-text{
+    width: 100%;
+    margin-left: 0;
+  }
+
+}
+
+@media(max-width: 768px){
+  .about .about-text .text{
+    flex-direction: column;
+  }
+
+  .about .about-text .text img{
+    flex-direction: column;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .about .about-text{
+    margin-top: 20px;
+  }
+
+}
+
+@media(max-width: 500px){
+
+  .about .about-text h2{
+    font-size: 25px;
+  }
+
+  .about .about-text h2::after{
+    margin: 20px auto;
+  }
+  .about .about-text{
+    text-align: center;
+  }
+
+  .about .about-text .text img{
+    display: none;
+  }
+}

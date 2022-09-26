@@ -1,0 +1,66 @@
+.info-barbershop{
+  padding: var(--spacing-primary);
+  background-image: url('../images/bg-location.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.info-barbershop .box-wrapper{
+  background-color: #000;
+  padding: 40px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-barbershop .box-wrapper .box-info div{
+  display: flex;
+  align-items: center;
+}
+
+.info-barbershop .box-wrapper .box-info div .icon{
+  display: flex;
+  border: 1px solid var(--color-primary);
+  padding: 10px;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.info-barbershop .box-wrapper .box-info div .location{
+  display: block;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.info-barbershop .box-wrapper .box-info div .location span:first-child{
+  color: silver;
+}
+
+.info-barbershop iframe{
+  width: 100%;
+}
+
+@media (max-width: 900px){
+  .info-barbershop .box-wrapper{
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .info-barbershop .box-wrapper .box-info{
+    width: 250px;
+  }
+}
+
+@media (max-width: 500px){
+  .info-barbershop{
+    padding: var(--spacing-mobile);
+  }
+
+  .info-barbershop .box-wrapper{
+    padding: 20px;
+  }
+}

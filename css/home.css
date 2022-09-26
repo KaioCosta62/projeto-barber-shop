@@ -1,0 +1,109 @@
+.home{
+  height: 100vh;
+  background-image: url('../images/bg-home.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.home .header{
+  padding-top: 30px;
+}
+
+.home .header .nav ul{
+  display: flex;
+  justify-content: center;
+}
+
+.home .header .nav ul li{
+  display: flex;
+  align-items: center;
+  width: 150px;
+  justify-content: center;
+}
+
+.home .header .nav ul li a{
+  color: #fff;
+  padding: 20px;
+  font-weight: bold;
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: 200ms ease-in-out;
+}
+
+.home .header .nav ul li a:hover{
+  border-bottom: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  transform: scale(1.2) translate(10px, 0px);
+}
+
+.home .header .nav ul li .logo{
+  margin: 0 100px;
+}
+
+.home .banner .slogan1{
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.home .banner{
+  position: absolute;
+  width: 770px;
+  height: 300px;
+  margin-left: -385px;
+  margin-top: -75px;
+  top: 50%;
+  left: 50%;
+}
+
+.home .banner h1{
+  font-size: 120px;
+  color: #fff;
+}
+
+.home .banner .slogan2{
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 800px){
+  .home .header .nav{
+    display: none;
+  }
+
+  .home .banner h1{
+    font-size: 70px;
+  }
+}
+
+@media(min-width: 577px) and (max-width: 768px){
+  .home .banner{
+    width: 550px;
+    margin-left: -275px;
+  }
+
+  .home .banner h1{
+    font-size: 60px;
+  }
+}
+
+@media(max-width: 576px){
+  .home .banner{
+    width: 250px;
+    height: 215px;
+    margin-left: -125px;
+    margin-top: -75px;
+  }
+
+  .home .banner h1{
+    font-size: 30px;
+  }
+
+  .home .banner span{
+    font-size: 12px;
+  }
+}
+
